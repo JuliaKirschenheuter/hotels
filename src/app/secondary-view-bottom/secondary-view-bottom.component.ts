@@ -8,12 +8,14 @@ import {IHotels} from "../common/mock/data";
 })
 export class SecondaryViewBottomComponent implements OnInit {
 
+  @Input()
+  public clickedHotel;
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  @Input()
-  public hotel: IHotels;
+
 
 }

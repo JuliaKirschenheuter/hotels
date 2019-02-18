@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {IHotels} from "../common/mock/data";
 
 @Component({
@@ -11,32 +11,11 @@ export class SecondaryViewTopComponent implements OnInit {
   constructor() { }
 
   @Input()
-  hotel: IHotels;
-
-  @Input()
-  clickedHotelAddress;
-
-
-  public choseHotelWeatherTitle;
-  public choseHotelWeatherTemperature;
-  public choseHotelWeatherWater;
+  clickedHotel;
 
   ngOnInit(): void {
-
-    console.log(this.hotel);
-
-    if (this.hotel.address === this.clickedHotelAddress) {
-      this.choseHotelWeatherTitle = this.hotel.weather.title;
-      this.choseHotelWeatherTemperature = this.hotel.weather.temperature;
-      this.choseHotelWeatherWater = this.hotel.weather.water;
-    }
-
+    console.log(this.clickedHotel);
   }
-
-
-
-
-
 
 
 }

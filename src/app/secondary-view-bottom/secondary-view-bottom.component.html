@@ -1,17 +1,17 @@
-<!--<div class="teddy-bear">-->
-  <!--<div class="teddy-clickedHotelAddress">-->
-    <!--<h4>{{hotel.social_info.title}}</h4>-->
-    <!--<span class="w-line"> </span>-->
-    <!--<img [src]="hotel.social_info.img" class="img-responsive">-->
-  <!--</div>-->
-  <!--<div class="teddy-follow">-->
-    <!--<ul>-->
-      <!--<li class="folw-h"><h3>{{hotel.social_info.followers}}</h3>-->
-        <!--<p>Followers</p>-->
-      <!--</li>-->
-      <!--<li><h3>{{hotel.social_info.following}}</h3>-->
-        <!--<p>Following</p>-->
-      <!--</li>-->
-    <!--</ul>-->
-  <!--</div>-->
-<!--</div>-->
+<div class="teddy-bear">
+  <div class="teddy-text">
+    <h4>{{clickedHotel?.social_info.title}}</h4>
+    <span class="w-line"> </span>
+    <img [src]="clickedHotel?.social_info.img" alt=""  class="img-responsive">
+  </div>
+  <div class="teddy-follow">
+    <ul>
+      <li class="folw-h"><h3>{{clickedHotel?.social_info.followers}}</h3>
+        <p>Followers</p>
+      </li>
+      <li><h3>{{clickedHotel?.social_info.following}}</h3>
+        <p>Following</p>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {AfterContentInit, Component, Input, OnInit} from '@angular/core';
 import {data$, IHotels} from "./common/mock/data";
 
 @Component({
@@ -6,13 +6,15 @@ import {data$, IHotels} from "./common/mock/data";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
 
   public hotels$ = data$;
 
-  public clickedHotelAddress = '';
+  public currElement: IHotels;
 
-
-
+  public clicked(el: IHotels) {
+    this.currElement = el;
+    console.log(this.currElement);
+  }
 
 }
