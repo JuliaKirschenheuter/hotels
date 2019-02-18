@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { MainViewComponent } from './main-view/main-view.component';
 import { SecondaryViewTopComponent } from './secondary-view-top/secondary-view-top.component';
 import { SecondaryViewBottomComponent } from './secondary-view-bottom/secondary-view-bottom.component';
+import { PhonenumberTransformerPipe } from './phonenumber-transformer.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainViewComponent,
     SecondaryViewTopComponent,
-    SecondaryViewBottomComponent
+    SecondaryViewBottomComponent,
+    PhonenumberTransformerPipe
   ],
   imports: [
     BrowserModule

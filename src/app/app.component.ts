@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, Input, OnInit} from '@angular/core';
+import { Component} from '@angular/core';
 import {data$, IHotels} from "./common/mock/data";
 
 @Component({
