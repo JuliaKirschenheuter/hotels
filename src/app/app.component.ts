@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {data$, IHotels} from "./common/mock/data";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hotels';
+
+  public hotels$ = data$;
+
+  public text = '';
+
+
+
+
+
+
+
 }
