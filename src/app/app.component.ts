@@ -10,10 +10,7 @@ export class AppComponent {
 
   public hotels$ = data$;
 
-  public text = '';
-
-
-
+  public clickedHotelAddress = '';
 
 
 

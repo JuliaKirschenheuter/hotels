@@ -1,7 +1,7 @@
-<!--<div class="temperatur">-->
-  <!--<h5>{{hotel.weather.title}}</h5>-->
-  <!--<span class="w-line"> </span>-->
-  <!--<span class="cloud"> </span>-->
-  <!--<h2>{{hotel.weather.temperature}}<sup class="degree">°</sup></h2>-->
-  <!--<h6>Water {{hotel.weather.water}}<sup class="degree">°</sup></h6>-->
-<!--</div>-->
+<div class="temperatur">
+  <h5 [innerHTML]="choseHotelWeatherTitle"></h5>
+  <span class="w-line"> </span>
+  <span class="cloud"> </span>
+  <h2 [innerHTML]="choseHotelWeatherTemperature"><sup class="degree">°</sup></h2>
+  <h6>Water {{choseHotelWeatherWater}}<sup class="degree">°</sup></h6>
+</div>

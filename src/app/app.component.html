@@ -19,23 +19,20 @@
           <div class="scrollbar" id="style-2" *ngIf="hotels$ | async as hotels">
 
             <app-main-view *ngFor="let hotel of hotels"
-                           [hotel] ="hotel"
-                           (clickedHotel)="text = $event"
+                           [hotel] = hotel
+                           (clickedHotel)="clickedHotelAddress = $event"
             >
             </app-main-view>
-            {{text}}
+            {{clickedHotelAddress}}
           </div>
         </div>
       </div>
     </div>
   </div>
 
-
-
-
   <div class="element-right">
-    <app-secondary-view-top></app-secondary-view-top>
-    <app-secondary-view-bottom></app-secondary-view-bottom>
+    <app-secondary-view-top [clickedHotelAddress] = "clickedHotelAddress" #hotel></app-secondary-view-top>
+    <!--<app-secondary-view-bottom></app-secondary-view-bottom>-->
   </div>
   <div class="clear"> </div>
 </div>

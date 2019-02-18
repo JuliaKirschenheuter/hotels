@@ -1,6 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {IHotels} from "../common/mock/data";
-import {publish} from "rxjs/operators";
 
 @Component({
   selector: 'app-main-view',
@@ -11,11 +10,11 @@ export class MainViewComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
   @Input()
   hotel: IHotels;
+
+  ngOnInit() {
+  }
 
   @Output()
   public clickedHotel = new EventEmitter();
