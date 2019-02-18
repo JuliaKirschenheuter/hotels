@@ -13,15 +13,10 @@ export class MainViewComponent implements OnInit {
   @Input()
   hotel: IHotels;
 
+  @Input()
+  clickedHotel;
+
   ngOnInit() {
   }
-
-  // @Output()
-  // public clickedHotel = new EventEmitter();
-  //
-  // public clicked(el: HTMLHeadElement) {
-  //   this.clickedHotel.emit((el as HTMLHeadElement).textContent);
-  // }
-
 
 }

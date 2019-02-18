@@ -2,7 +2,7 @@
 <div class="element">
 
   <div class="element-left">
-    <div class="element-bg-img"><img src="../assets/img/1.jpg" alt="" class="img-responsive"> </div>
+    <div class="element-bg-img"><img [src]="currElement.img" alt="" class="img-responsive"> </div>
     <div class="element-left-bottom">
       <div class="ele-strip">
         <ul>
@@ -21,6 +21,7 @@
             <app-main-view *ngFor="let hotel of hotels"
                            [hotel] = hotel
                            (click)="clicked(hotel)"
+                           [clickedHotel]="currElement"
             >
             </app-main-view>
           </div>
