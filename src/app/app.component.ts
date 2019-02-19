@@ -14,7 +14,6 @@ export class AppComponent{
 
   public clicked(el: IHotels) {
     this.currElement = el;
-    console.log(this.currElement);
   }
 
 }

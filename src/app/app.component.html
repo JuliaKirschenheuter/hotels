@@ -2,16 +2,19 @@
 <div class="element">
 
   <div class="element-left">
-    <div class="element-bg-img"><img [src]="currElement.img" alt="" class="img-responsive"> </div>
+    <div class="element-bg-img"><img [src]="currElement?.img" alt="" class="img-responsive"> </div>
     <div class="element-left-bottom">
-      <div class="ele-strip">
-        <ul>
-          <li><a href="#">Hotel</a></li>
-          <li><a href="#">...</a></li>
-          <li><a href="#">...</a></li>
-          <li class="anc-bor"><a href="#">Weather</a></li>
+
+
+      <div class="ele-strip" >
+        <ul *ngIf="hotels$ | async  as hotels">
+          <li *ngFor="let hotel of hotels | sortingMenuItems">
+            <a href="#">{{hotel }}</a>
+          </li>
+          <li class="anc-bor"></li>
         </ul>
       </div>
+
       <div class="village">
         <h3>Righteous indignation & like</h3>
         <span class="line"> </span>

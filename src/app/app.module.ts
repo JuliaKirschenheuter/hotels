@@ -6,6 +6,7 @@ import { MainViewComponent } from './main-view/main-view.component';
 import { SecondaryViewTopComponent } from './secondary-view-top/secondary-view-top.component';
 import { SecondaryViewBottomComponent } from './secondary-view-bottom/secondary-view-bottom.component';
 import { PhonenumberTransformerPipe } from './phonenumber-transformer.pipe';
+import { SortingMenuItemsPipe } from './sorting-menu-items.pipe';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PhonenumberTransformerPipe } from './phonenumber-transformer.pipe';
     MainViewComponent,
     SecondaryViewTopComponent,
     SecondaryViewBottomComponent,
-    PhonenumberTransformerPipe
+    PhonenumberTransformerPipe,
+    SortingMenuItemsPipe
   ],
   imports: [
     BrowserModule
